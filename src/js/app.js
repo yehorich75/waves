@@ -1,5 +1,11 @@
-import 'pixi.js';
-import {TimelineMax} from 'gsap';
+import ImageLoader from './ImageLoad';
+
+$('.js-loadme').each(function(index, el) {
+  let img = new ImageLoader($(el));
+});
+
+// import 'pixi.js';
+// import {TimelineMax} from 'gsap';
 
 let app = new PIXI.Application({width: 300, height: 300, backgroundColor: 0x000000});
 
